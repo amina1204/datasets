@@ -1,0 +1,7 @@
+import pandas as pd
+
+# Read data from medical.json
+medical_records_df = pd.read_json('medical_records.json', orient='records', lines=True)
+
+# Read data from hospital.xlsx
+hospital_visits_df = pd.read_excel('health_datasets.xlsx', sheet_name='HospitalVisits')
